@@ -1,10 +1,25 @@
 class Cliente:
     def __init__(self, id:int, nome:str, saldo:float):
+        """
+        Construtor da classe Cliente
+
+        Args:
+            self: a própria instância
+            id: id único do cliente (int)
+            nome: nome do cliente (str)
+            saldo: saldo bancário do cliente (float)
+        """
         self._id = id
         self._nome = nome
         self._saldo = saldo
 
     def __str__(self) -> str:
+        """
+        Exibe de forma amigável ao usuário os inputs dos dados
+
+        Args:
+            self: a própria instância
+        """
         return f"ID: {self._id} | Nome: {self._nome} | Saldo: {self._saldo}"
     
     
